@@ -2,6 +2,9 @@
 A simple flask application NOVA students can use to quickly calculate how many credits they will receive from their AP Exam scores from various college in NOVA.
 
 #### Link to GMU transfer credit guide: <https://www.gmu.edu/freshman/requirements/exam-credit>
+#### Link to WM transfer credit guide: <https://www.wm.edu/offices/registrar/documents/catalog/prematriculationexamtable.pdf>
+#### Link to UVA transfer credit guide: <http://records.ureg.virginia.edu/content.php?catoid=52&navoid=4102#Advanced_Placement_Program>
+#### Link to VT transfer credit guide: <https://www.registrar.vt.edu/content/dam/registrar_vt_edu/documents/Updates/ap_ib_clep/AP-Credits-2023.pdf>
 
 ## Setting up the Web-App Locally 
 
