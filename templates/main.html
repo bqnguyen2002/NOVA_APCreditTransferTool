@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Search Box, Search Panel Like Amazon</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="{{ url_for('static', filename='container.css')}}"
+    />
+    <link rel="shortcut icon" href="#" />
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script>
+      const chart_dataGMU = {{ listGMU|tojson }}
+      const chart_dataWM = {{ listWM|tojson }}
+      const chart_dataUVA = {{ listUVA|tojson }}
+      const chart_dataVT = {{ listVT|tojson }}
+    </script>
+  </head>
+  <body>
+    <h1>NOVA AP Credit Transfer Tool</h1>
+    <h2>Select which AP Courses you'd like to transfer</h2>
+    <nav>
+      <label for="touch"><span>ap exams</span></label>
+      <input type="checkbox" id="touch" />
+      <ul class="slide">
+        {% for item in exams %}
+        <li onclick="select(this)" id="exam_item"><a>{{item}}</a></li>
+        {% endfor %}
+        <a href="/results" onclick="getScores()"
+          ><button class="button-23" role="button">Calculate</button></a
+        >
+      </ul>
+    </nav>
+  </body>
+</html>

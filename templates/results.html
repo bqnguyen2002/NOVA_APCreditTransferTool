@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Search Box, Search Panel Like Amazon</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="{{ url_for('static', filename='container.css')}}"
+    />
+    <link rel="shortcut icon" href="#" />
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script>
+      window.onload = function () {
+        document.getElementById("GMUscore").innerHTML =
+          "You will receive " +
+          localStorage.getItem("storageGMU") +
+          " credits from GMU!";
+        document.getElementById("WMscore").innerHTML =
+          "You will receive " +
+          localStorage.getItem("storageWM") +
+          " credits from WM!";
+        document.getElementById("UVAscore").innerHTML =
+          "You will receive " +
+          localStorage.getItem("storageUVA") +
+          " credits from UVA!";
+        document.getElementById("VTscore").innerHTML =
+          "You will receive " +
+          localStorage.getItem("storageVT") +
+          " credits from VT!";
+      };
+    </script>
+  </head>
+  <body>
+    <h1>NOVA AP Credit Transfer Tool</h1>
+    <div class="img-with-text">
+      <img src="/static/GMUlogo.png" />
+      <p id="GMUscore"></p>
+    </div>
+    <div class="img-with-text">
+      <img src="/static/WMlogo.png" />
+      <p id="WMscore"></p>
+    </div>
+    <div class="img-with-text">
+      <img src="/static/UVAlogo.png" />
+      <p id="UVAscore"></p>
+    </div>
+    <div class="img-with-text">
+      <img src="/static/VTlogo.png" />
+      <p id="VTscore"></p>
+    </div>
+    <div style="text-align: center">
+      <a href="/"><button class="button-23" role="button">Back</button></a>
+    </div>
+  </body>
+</html>
