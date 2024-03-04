@@ -1,6 +1,8 @@
 ## NOVA University AP Credit Transfer Tool
 A simple flask application incoming college students residing in NOVA can use to quickly calculate how many credits they will receive from their AP Exam scores from the most popular colleges in NOVA.
 
+This tool is not 100% percent accurate as there are certain credit amounts that are different based on majors but gives a good esimate to how many credits you can receive.
+
 #### Link to GMU transfer credit guide: <https://www.gmu.edu/freshman/requirements/exam-credit>
 #### Link to WM transfer credit guide: <https://www.wm.edu/offices/registrar/documents/catalog/prematriculationexamtable.pdf>
 #### Link to UVA transfer credit guide: <http://records.ureg.virginia.edu/content.php?catoid=52&navoid=4102#Advanced_Placement_Program>
